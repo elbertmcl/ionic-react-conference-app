@@ -9,7 +9,7 @@ interface AboutProps { }
 const About: React.FC<AboutProps> = () => {
 
   const [showPopover, setShowPopover] = useState(false);
-  const [popoverEvent, setPopoverEvent] = useState();
+  const [popoverEvent, setPopoverEvent] = useState<any>();
   const [location, setLocation] = useState<'madison' | 'austin' | 'chicago' | 'seattle'>('madison');
   const [conferenceDate, setConferenceDate] = useState('2047-05-17T00:00:00-05:00');
 
@@ -18,7 +18,7 @@ const About: React.FC<AboutProps> = () => {
   };
 
   const presentPopover = (e: React.MouseEvent) => {
-    setPopoverEvent(e.nativeEvent);
+    // setPopoverEvent(e.nativeEvent);
     setShowPopover(true);
   };
 

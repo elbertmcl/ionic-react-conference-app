@@ -1,5 +1,5 @@
 import React from 'react';
-import Map from '../components/Map';
+// import Map from '../components/Map';
 import { IonHeader, IonToolbar, IonButtons, IonMenuButton, IonTitle, IonContent, IonPage } from '@ionic/react';
 import { Location } from '../models/Location';
 import { connect } from '../data/connect';
@@ -30,7 +30,8 @@ const MapView: React.FC<MapViewProps> = ({ locations, mapCenter }) => {
     </IonHeader>
 
     <IonContent class="map-page">
-      <Map locations={locations} mapCenter={mapCenter} />
+      {/* <Map locations={locations} mapCenter={mapCenter} /> */}
+      Map was here...
     </IonContent>
   </IonPage>
 )};
